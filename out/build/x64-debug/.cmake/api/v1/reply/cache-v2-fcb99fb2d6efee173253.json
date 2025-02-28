@@ -1442,6 +1442,18 @@
 			"value" : "FALSE"
 		},
 		{
+			"name" : "ENABLE_SANITIZERS",
+			"properties" : 
+			[
+				{
+					"name" : "HELPSTRING",
+					"value" : "Enable sanitizers for debugging"
+				}
+			],
+			"type" : "BOOL",
+			"value" : "OFF"
+		},
+		{
 			"name" : "EXECUTABLE_OUTPUT_PATH",
 			"properties" : 
 			[

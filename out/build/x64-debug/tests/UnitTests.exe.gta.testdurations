@@ -5,5 +5,16 @@
     <TestDuration Test="ArrayProcessorTest.MinMaxCalculation" Duration="42" />
     <TestDuration Test="ArrayProcessorTest.AverageCalculation" Duration="60" />
     <TestDuration Test="ArrayProcessorTest.ReplaceLogic" Duration="30" />
+    <TestDuration Test="ArrayProcessorTest.ThrowsOnEmptyArrayForMinMax" Duration="1" />
+    <TestDuration Test="ArrayProcessorTest.ThrowsOnEmptyArrayForAverage" Duration="1" />
+    <TestDuration Test="ArrayProcessorTest.SingleElementArray" Duration="19" />
+    <TestDuration Test="ArrayProcessorTest.NegativeNumbersHandling" Duration="61" />
+    <TestDuration Test="ArrayProcessorTest.DuplicateElements" Duration="91" />
+    <TestDuration Test="ArrayProcessorTest.ReplaceAllMinMax" Duration="30" />
+    <TestDuration Test="ArrayProcessorTest.PartialReplacement" Duration="30" />
+    <TestDuration Test="ArrayProcessorTest.AllElementsSameAfterReplace" Duration="15" />
+    <TestDuration Test="ArrayProcessorTest.MixedPositiveNegative" Duration="94" />
+    <TestDuration Test="ArrayProcessorTest.LargeNumbersHandling" Duration="62" />
+    <TestDuration Test="ArrayProcessorTest.EmptyArrayReplaceNoOp" Duration="1" />
   </TestDurations>
 </GtaTestDurations>

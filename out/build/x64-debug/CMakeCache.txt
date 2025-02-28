@@ -265,6 +265,9 @@ CMAKE_STATIC_LINKER_FLAGS_RELWITHDEBINFO:STRING=
 // Studio IDE projects all commands are done without /nologo.
 CMAKE_VERBOSE_MAKEFILE:BOOL=FALSE
 
+//Enable sanitizers for debugging
+ENABLE_SANITIZERS:BOOL=OFF
+
 //Single output directory for building all executables.
 EXECUTABLE_OUTPUT_PATH:PATH=
 
