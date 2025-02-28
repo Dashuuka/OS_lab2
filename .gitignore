@@ -1,1 +1,6 @@
 .vs/ 
+/build/
+*.obj
+*.exe
+*.pdb
+*.ilk

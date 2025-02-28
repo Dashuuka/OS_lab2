@@ -190,7 +190,7 @@ build _deps\googletest-build\install\local: phony _deps\googletest-build\CMakeFi
 build cmake_object_order_depends_target_gmock: phony || _deps\googletest-build\googlemock\CMakeFiles\gmock.dir
 
 build _deps\googletest-build\googlemock\CMakeFiles\gmock.dir\__\googletest\src\gtest-all.cc.obj: CXX_COMPILER__gmock_unscanned_Debug C$:\Users\Dashuka\source\repos\Lab2_Operating_systems\out\build\x64-debug\_deps\googletest-src\googletest\src\gtest-all.cc || cmake_object_order_depends_target_gmock
-  FLAGS = /DWIN32 /D_WINDOWS /W4 /GR  /MDd /Ob0 /Od /RTC1 -GS -W4 -WX -wd4251 -wd4275 -nologo -J -D_UNICODE -DUNICODE -DWIN32 -D_WIN32 -DSTRICT -DWIN32_LEAN_AND_MEAN -wd4702 -utf-8 -DGTEST_HAS_PTHREAD=0 -EHsc -D_HAS_EXCEPTIONS=1
+  FLAGS = /DWIN32 /D_WINDOWS /W4 /GR  /MDd /Ob0 /Od /RTC1 -std:c++17 -GS -W4 -WX -wd4251 -wd4275 -nologo -J -D_UNICODE -DUNICODE -DWIN32 -D_WIN32 -DSTRICT -DWIN32_LEAN_AND_MEAN -wd4702 -utf-8 -DGTEST_HAS_PTHREAD=0 -EHsc -D_HAS_EXCEPTIONS=1
   INCLUDES = -IC:\Users\Dashuka\source\repos\Lab2_Operating_systems\out\build\x64-debug\_deps\googletest-src\googlemock\include -IC:\Users\Dashuka\source\repos\Lab2_Operating_systems\out\build\x64-debug\_deps\googletest-src\googlemock -IC:\Users\Dashuka\source\repos\Lab2_Operating_systems\out\build\x64-debug\_deps\googletest-src\googletest\include -IC:\Users\Dashuka\source\repos\Lab2_Operating_systems\out\build\x64-debug\_deps\googletest-src\googletest
   OBJECT_DIR = _deps\googletest-build\googlemock\CMakeFiles\gmock.dir
   OBJECT_FILE_DIR = _deps\googletest-build\googlemock\CMakeFiles\gmock.dir\__\googletest\src
@@ -198,7 +198,7 @@ build _deps\googletest-build\googlemock\CMakeFiles\gmock.dir\__\googletest\src\g
   TARGET_PDB = bin\gmockpdb_debug_postfix-NOTFOUND.pdb
 
 build _deps\googletest-build\googlemock\CMakeFiles\gmock.dir\src\gmock-all.cc.obj: CXX_COMPILER__gmock_unscanned_Debug C$:\Users\Dashuka\source\repos\Lab2_Operating_systems\out\build\x64-debug\_deps\googletest-src\googlemock\src\gmock-all.cc || cmake_object_order_depends_target_gmock
-  FLAGS = /DWIN32 /D_WINDOWS /W4 /GR  /MDd /Ob0 /Od /RTC1 -GS -W4 -WX -wd4251 -wd4275 -nologo -J -D_UNICODE -DUNICODE -DWIN32 -D_WIN32 -DSTRICT -DWIN32_LEAN_AND_MEAN -wd4702 -utf-8 -DGTEST_HAS_PTHREAD=0 -EHsc -D_HAS_EXCEPTIONS=1
+  FLAGS = /DWIN32 /D_WINDOWS /W4 /GR  /MDd /Ob0 /Od /RTC1 -std:c++17 -GS -W4 -WX -wd4251 -wd4275 -nologo -J -D_UNICODE -DUNICODE -DWIN32 -D_WIN32 -DSTRICT -DWIN32_LEAN_AND_MEAN -wd4702 -utf-8 -DGTEST_HAS_PTHREAD=0 -EHsc -D_HAS_EXCEPTIONS=1
   INCLUDES = -IC:\Users\Dashuka\source\repos\Lab2_Operating_systems\out\build\x64-debug\_deps\googletest-src\googlemock\include -IC:\Users\Dashuka\source\repos\Lab2_Operating_systems\out\build\x64-debug\_deps\googletest-src\googlemock -IC:\Users\Dashuka\source\repos\Lab2_Operating_systems\out\build\x64-debug\_deps\googletest-src\googletest\include -IC:\Users\Dashuka\source\repos\Lab2_Operating_systems\out\build\x64-debug\_deps\googletest-src\googletest
   OBJECT_DIR = _deps\googletest-build\googlemock\CMakeFiles\gmock.dir
   OBJECT_FILE_DIR = _deps\googletest-build\googlemock\CMakeFiles\gmock.dir\src
@@ -233,7 +233,7 @@ build lib\gmock.lib: CXX_STATIC_LIBRARY_LINKER__gmock_Debug _deps\googletest-bui
 build cmake_object_order_depends_target_gmock_main: phony || _deps\googletest-build\googlemock\CMakeFiles\gmock_main.dir
 
 build _deps\googletest-build\googlemock\CMakeFiles\gmock_main.dir\__\googletest\src\gtest-all.cc.obj: CXX_COMPILER__gmock_main_unscanned_Debug C$:\Users\Dashuka\source\repos\Lab2_Operating_systems\out\build\x64-debug\_deps\googletest-src\googletest\src\gtest-all.cc || cmake_object_order_depends_target_gmock_main
-  FLAGS = /DWIN32 /D_WINDOWS /W4 /GR  /MDd /Ob0 /Od /RTC1 -GS -W4 -WX -wd4251 -wd4275 -nologo -J -D_UNICODE -DUNICODE -DWIN32 -D_WIN32 -DSTRICT -DWIN32_LEAN_AND_MEAN -wd4702 -utf-8 -DGTEST_HAS_PTHREAD=0 -EHsc -D_HAS_EXCEPTIONS=1
+  FLAGS = /DWIN32 /D_WINDOWS /W4 /GR  /MDd /Ob0 /Od /RTC1 -std:c++17 -GS -W4 -WX -wd4251 -wd4275 -nologo -J -D_UNICODE -DUNICODE -DWIN32 -D_WIN32 -DSTRICT -DWIN32_LEAN_AND_MEAN -wd4702 -utf-8 -DGTEST_HAS_PTHREAD=0 -EHsc -D_HAS_EXCEPTIONS=1
   INCLUDES = -IC:\Users\Dashuka\source\repos\Lab2_Operating_systems\out\build\x64-debug\_deps\googletest-src\googlemock\include -IC:\Users\Dashuka\source\repos\Lab2_Operating_systems\out\build\x64-debug\_deps\googletest-src\googlemock -IC:\Users\Dashuka\source\repos\Lab2_Operating_systems\out\build\x64-debug\_deps\googletest-src\googletest\include -IC:\Users\Dashuka\source\repos\Lab2_Operating_systems\out\build\x64-debug\_deps\googletest-src\googletest
   OBJECT_DIR = _deps\googletest-build\googlemock\CMakeFiles\gmock_main.dir
   OBJECT_FILE_DIR = _deps\googletest-build\googlemock\CMakeFiles\gmock_main.dir\__\googletest\src
@@ -241,7 +241,7 @@ build _deps\googletest-build\googlemock\CMakeFiles\gmock_main.dir\__\googletest\
   TARGET_PDB = bin\gmock_mainpdb_debug_postfix-NOTFOUND.pdb
 
 build _deps\googletest-build\googlemock\CMakeFiles\gmock_main.dir\src\gmock-all.cc.obj: CXX_COMPILER__gmock_main_unscanned_Debug C$:\Users\Dashuka\source\repos\Lab2_Operating_systems\out\build\x64-debug\_deps\googletest-src\googlemock\src\gmock-all.cc || cmake_object_order_depends_target_gmock_main
-  FLAGS = /DWIN32 /D_WINDOWS /W4 /GR  /MDd /Ob0 /Od /RTC1 -GS -W4 -WX -wd4251 -wd4275 -nologo -J -D_UNICODE -DUNICODE -DWIN32 -D_WIN32 -DSTRICT -DWIN32_LEAN_AND_MEAN -wd4702 -utf-8 -DGTEST_HAS_PTHREAD=0 -EHsc -D_HAS_EXCEPTIONS=1
+  FLAGS = /DWIN32 /D_WINDOWS /W4 /GR  /MDd /Ob0 /Od /RTC1 -std:c++17 -GS -W4 -WX -wd4251 -wd4275 -nologo -J -D_UNICODE -DUNICODE -DWIN32 -D_WIN32 -DSTRICT -DWIN32_LEAN_AND_MEAN -wd4702 -utf-8 -DGTEST_HAS_PTHREAD=0 -EHsc -D_HAS_EXCEPTIONS=1
   INCLUDES = -IC:\Users\Dashuka\source\repos\Lab2_Operating_systems\out\build\x64-debug\_deps\googletest-src\googlemock\include -IC:\Users\Dashuka\source\repos\Lab2_Operating_systems\out\build\x64-debug\_deps\googletest-src\googlemock -IC:\Users\Dashuka\source\repos\Lab2_Operating_systems\out\build\x64-debug\_deps\googletest-src\googletest\include -IC:\Users\Dashuka\source\repos\Lab2_Operating_systems\out\build\x64-debug\_deps\googletest-src\googletest
   OBJECT_DIR = _deps\googletest-build\googlemock\CMakeFiles\gmock_main.dir
   OBJECT_FILE_DIR = _deps\googletest-build\googlemock\CMakeFiles\gmock_main.dir\src
@@ -249,7 +249,7 @@ build _deps\googletest-build\googlemock\CMakeFiles\gmock_main.dir\src\gmock-all.
   TARGET_PDB = bin\gmock_mainpdb_debug_postfix-NOTFOUND.pdb
 
 build _deps\googletest-build\googlemock\CMakeFiles\gmock_main.dir\src\gmock_main.cc.obj: CXX_COMPILER__gmock_main_unscanned_Debug C$:\Users\Dashuka\source\repos\Lab2_Operating_systems\out\build\x64-debug\_deps\googletest-src\googlemock\src\gmock_main.cc || cmake_object_order_depends_target_gmock_main
-  FLAGS = /DWIN32 /D_WINDOWS /W4 /GR  /MDd /Ob0 /Od /RTC1 -GS -W4 -WX -wd4251 -wd4275 -nologo -J -D_UNICODE -DUNICODE -DWIN32 -D_WIN32 -DSTRICT -DWIN32_LEAN_AND_MEAN -wd4702 -utf-8 -DGTEST_HAS_PTHREAD=0 -EHsc -D_HAS_EXCEPTIONS=1
+  FLAGS = /DWIN32 /D_WINDOWS /W4 /GR  /MDd /Ob0 /Od /RTC1 -std:c++17 -GS -W4 -WX -wd4251 -wd4275 -nologo -J -D_UNICODE -DUNICODE -DWIN32 -D_WIN32 -DSTRICT -DWIN32_LEAN_AND_MEAN -wd4702 -utf-8 -DGTEST_HAS_PTHREAD=0 -EHsc -D_HAS_EXCEPTIONS=1
   INCLUDES = -IC:\Users\Dashuka\source\repos\Lab2_Operating_systems\out\build\x64-debug\_deps\googletest-src\googlemock\include -IC:\Users\Dashuka\source\repos\Lab2_Operating_systems\out\build\x64-debug\_deps\googletest-src\googlemock -IC:\Users\Dashuka\source\repos\Lab2_Operating_systems\out\build\x64-debug\_deps\googletest-src\googletest\include -IC:\Users\Dashuka\source\repos\Lab2_Operating_systems\out\build\x64-debug\_deps\googletest-src\googletest
   OBJECT_DIR = _deps\googletest-build\googlemock\CMakeFiles\gmock_main.dir
   OBJECT_FILE_DIR = _deps\googletest-build\googlemock\CMakeFiles\gmock_main.dir\src
@@ -354,7 +354,7 @@ build _deps\googletest-build\googlemock\install\local: phony _deps\googletest-bu
 build cmake_object_order_depends_target_gtest: phony || _deps\googletest-build\googletest\CMakeFiles\gtest.dir
 
 build _deps\googletest-build\googletest\CMakeFiles\gtest.dir\src\gtest-all.cc.obj: CXX_COMPILER__gtest_unscanned_Debug C$:\Users\Dashuka\source\repos\Lab2_Operating_systems\out\build\x64-debug\_deps\googletest-src\googletest\src\gtest-all.cc || cmake_object_order_depends_target_gtest
-  FLAGS = /DWIN32 /D_WINDOWS /W4 /GR  /MDd /Ob0 /Od /RTC1 -GS -W4 -WX -wd4251 -wd4275 -nologo -J -D_UNICODE -DUNICODE -DWIN32 -D_WIN32 -DSTRICT -DWIN32_LEAN_AND_MEAN -wd4702 -utf-8 -DGTEST_HAS_PTHREAD=0 -EHsc -D_HAS_EXCEPTIONS=1
+  FLAGS = /DWIN32 /D_WINDOWS /W4 /GR  /MDd /Ob0 /Od /RTC1 -std:c++17 -GS -W4 -WX -wd4251 -wd4275 -nologo -J -D_UNICODE -DUNICODE -DWIN32 -D_WIN32 -DSTRICT -DWIN32_LEAN_AND_MEAN -wd4702 -utf-8 -DGTEST_HAS_PTHREAD=0 -EHsc -D_HAS_EXCEPTIONS=1
   INCLUDES = -IC:\Users\Dashuka\source\repos\Lab2_Operating_systems\out\build\x64-debug\_deps\googletest-src\googletest\include -IC:\Users\Dashuka\source\repos\Lab2_Operating_systems\out\build\x64-debug\_deps\googletest-src\googletest
   OBJECT_DIR = _deps\googletest-build\googletest\CMakeFiles\gtest.dir
   OBJECT_FILE_DIR = _deps\googletest-build\googletest\CMakeFiles\gtest.dir\src
@@ -389,7 +389,7 @@ build lib\gtest.lib: CXX_STATIC_LIBRARY_LINKER__gtest_Debug _deps\googletest-bui
 build cmake_object_order_depends_target_gtest_main: phony || cmake_object_order_depends_target_gtest
 
 build _deps\googletest-build\googletest\CMakeFiles\gtest_main.dir\src\gtest_main.cc.obj: CXX_COMPILER__gtest_main_unscanned_Debug C$:\Users\Dashuka\source\repos\Lab2_Operating_systems\out\build\x64-debug\_deps\googletest-src\googletest\src\gtest_main.cc || cmake_object_order_depends_target_gtest_main
-  FLAGS = /DWIN32 /D_WINDOWS /W4 /GR  /MDd /Ob0 /Od /RTC1 -GS -W4 -WX -wd4251 -wd4275 -nologo -J -D_UNICODE -DUNICODE -DWIN32 -D_WIN32 -DSTRICT -DWIN32_LEAN_AND_MEAN -wd4702 -utf-8 -DGTEST_HAS_PTHREAD=0 -EHsc -D_HAS_EXCEPTIONS=1
+  FLAGS = /DWIN32 /D_WINDOWS /W4 /GR  /MDd /Ob0 /Od /RTC1 -std:c++17 -GS -W4 -WX -wd4251 -wd4275 -nologo -J -D_UNICODE -DUNICODE -DWIN32 -D_WIN32 -DSTRICT -DWIN32_LEAN_AND_MEAN -wd4702 -utf-8 -DGTEST_HAS_PTHREAD=0 -EHsc -D_HAS_EXCEPTIONS=1
   INCLUDES = -external:IC:\Users\Dashuka\source\repos\Lab2_Operating_systems\out\build\x64-debug\_deps\googletest-src\googletest\include -external:IC:\Users\Dashuka\source\repos\Lab2_Operating_systems\out\build\x64-debug\_deps\googletest-src\googletest -external:W0
   OBJECT_DIR = _deps\googletest-build\googletest\CMakeFiles\gtest_main.dir
   OBJECT_FILE_DIR = _deps\googletest-build\googletest\CMakeFiles\gtest_main.dir\src
@@ -485,84 +485,76 @@ build _deps\googletest-build\googletest\install\local: phony _deps\googletest-bu
 # =============================================================================
 
 # =============================================================================
-# Object build statements for STATIC_LIBRARY target lab_lib
+# Object build statements for STATIC_LIBRARY target array_processor
 
 
 #############################################
-# Order-only phony target for lab_lib
+# Order-only phony target for array_processor
 
-build cmake_object_order_depends_target_lab_lib: phony || src\CMakeFiles\lab_lib.dir
+build cmake_object_order_depends_target_array_processor: phony || src\CMakeFiles\array_processor.dir
 
-build src\CMakeFiles\lab_lib.dir\min_max_thread.cpp.obj: CXX_COMPILER__lab_lib_unscanned_Debug C$:\Users\Dashuka\source\repos\Lab2_Operating_systems\src\min_max_thread.cpp || cmake_object_order_depends_target_lab_lib
-  FLAGS = /DWIN32 /D_WINDOWS /W3 /GR /EHsc /MDd /Ob0 /Od /RTC1
+build src\CMakeFiles\array_processor.dir\array_processor.cpp.obj: CXX_COMPILER__array_processor_unscanned_Debug C$:\Users\Dashuka\source\repos\Lab2_Operating_systems\src\array_processor.cpp || cmake_object_order_depends_target_array_processor
+  FLAGS = /DWIN32 /D_WINDOWS /W3 /GR /EHsc /MDd /Ob0 /Od /RTC1 -std:c++17
   INCLUDES = -IC:\Users\Dashuka\source\repos\Lab2_Operating_systems\include
-  OBJECT_DIR = src\CMakeFiles\lab_lib.dir
-  OBJECT_FILE_DIR = src\CMakeFiles\lab_lib.dir
-  TARGET_COMPILE_PDB = src\CMakeFiles\lab_lib.dir\lab_lib.pdb
-  TARGET_PDB = src\lab_lib.pdb
-
-build src\CMakeFiles\lab_lib.dir\average_thread.cpp.obj: CXX_COMPILER__lab_lib_unscanned_Debug C$:\Users\Dashuka\source\repos\Lab2_Operating_systems\src\average_thread.cpp || cmake_object_order_depends_target_lab_lib
-  FLAGS = /DWIN32 /D_WINDOWS /W3 /GR /EHsc /MDd /Ob0 /Od /RTC1
-  INCLUDES = -IC:\Users\Dashuka\source\repos\Lab2_Operating_systems\include
-  OBJECT_DIR = src\CMakeFiles\lab_lib.dir
-  OBJECT_FILE_DIR = src\CMakeFiles\lab_lib.dir
-  TARGET_COMPILE_PDB = src\CMakeFiles\lab_lib.dir\lab_lib.pdb
-  TARGET_PDB = src\lab_lib.pdb
+  OBJECT_DIR = src\CMakeFiles\array_processor.dir
+  OBJECT_FILE_DIR = src\CMakeFiles\array_processor.dir
+  TARGET_COMPILE_PDB = src\CMakeFiles\array_processor.dir\array_processor.pdb
+  TARGET_PDB = src\array_processor.pdb
 
 
 # =============================================================================
-# Link build statements for STATIC_LIBRARY target lab_lib
+# Link build statements for STATIC_LIBRARY target array_processor
 
 
 #############################################
-# Link the static library src\lab_lib.lib
+# Link the static library src\array_processor.lib
 
-build src\lab_lib.lib: CXX_STATIC_LIBRARY_LINKER__lab_lib_Debug src\CMakeFiles\lab_lib.dir\min_max_thread.cpp.obj src\CMakeFiles\lab_lib.dir\average_thread.cpp.obj
+build src\array_processor.lib: CXX_STATIC_LIBRARY_LINKER__array_processor_Debug src\CMakeFiles\array_processor.dir\array_processor.cpp.obj
   LANGUAGE_COMPILE_FLAGS = /DWIN32 /D_WINDOWS /W3 /GR /EHsc /MDd /Ob0 /Od /RTC1
   LINK_FLAGS = /machine:x64
-  OBJECT_DIR = src\CMakeFiles\lab_lib.dir
+  OBJECT_DIR = src\CMakeFiles\array_processor.dir
   POST_BUILD = cd .
   PRE_LINK = cd .
-  TARGET_COMPILE_PDB = src\CMakeFiles\lab_lib.dir\lab_lib.pdb
-  TARGET_FILE = src\lab_lib.lib
-  TARGET_PDB = src\lab_lib.pdb
+  TARGET_COMPILE_PDB = src\CMakeFiles\array_processor.dir\array_processor.pdb
+  TARGET_FILE = src\array_processor.lib
+  TARGET_PDB = src\array_processor.pdb
 
 # =============================================================================
-# Object build statements for EXECUTABLE target Lab2_Operating_systems
+# Object build statements for EXECUTABLE target Lab1_Operating_systems
 
 
 #############################################
-# Order-only phony target for Lab2_Operating_systems
+# Order-only phony target for Lab1_Operating_systems
 
-build cmake_object_order_depends_target_Lab2_Operating_systems: phony || cmake_object_order_depends_target_lab_lib
+build cmake_object_order_depends_target_Lab1_Operating_systems: phony || cmake_object_order_depends_target_array_processor
 
-build src\CMakeFiles\Lab2_Operating_systems.dir\main.cpp.obj: CXX_COMPILER__Lab2_Operating_systems_unscanned_Debug C$:\Users\Dashuka\source\repos\Lab2_Operating_systems\src\main.cpp || cmake_object_order_depends_target_Lab2_Operating_systems
-  FLAGS = /DWIN32 /D_WINDOWS /W3 /GR /EHsc /MDd /Ob0 /Od /RTC1
+build src\CMakeFiles\Lab1_Operating_systems.dir\main.cpp.obj: CXX_COMPILER__Lab1_Operating_systems_unscanned_Debug C$:\Users\Dashuka\source\repos\Lab2_Operating_systems\src\main.cpp || cmake_object_order_depends_target_Lab1_Operating_systems
+  FLAGS = /DWIN32 /D_WINDOWS /W3 /GR /EHsc /MDd /Ob0 /Od /RTC1 -std:c++17
   INCLUDES = -IC:\Users\Dashuka\source\repos\Lab2_Operating_systems\include
-  OBJECT_DIR = src\CMakeFiles\Lab2_Operating_systems.dir
-  OBJECT_FILE_DIR = src\CMakeFiles\Lab2_Operating_systems.dir
-  TARGET_COMPILE_PDB = src\CMakeFiles\Lab2_Operating_systems.dir\
-  TARGET_PDB = src\Lab2_Operating_systems.pdb
+  OBJECT_DIR = src\CMakeFiles\Lab1_Operating_systems.dir
+  OBJECT_FILE_DIR = src\CMakeFiles\Lab1_Operating_systems.dir
+  TARGET_COMPILE_PDB = src\CMakeFiles\Lab1_Operating_systems.dir\
+  TARGET_PDB = src\Lab1_Operating_systems.pdb
 
 
 # =============================================================================
-# Link build statements for EXECUTABLE target Lab2_Operating_systems
+# Link build statements for EXECUTABLE target Lab1_Operating_systems
 
 
 #############################################
-# Link the executable src\Lab2_Operating_systems.exe
+# Link the executable src\Lab1_Operating_systems.exe
 
-build src\Lab2_Operating_systems.exe: CXX_EXECUTABLE_LINKER__Lab2_Operating_systems_Debug src\CMakeFiles\Lab2_Operating_systems.dir\main.cpp.obj | src\lab_lib.lib || src\lab_lib.lib
+build src\Lab1_Operating_systems.exe: CXX_EXECUTABLE_LINKER__Lab1_Operating_systems_Debug src\CMakeFiles\Lab1_Operating_systems.dir\main.cpp.obj | src\array_processor.lib || src\array_processor.lib
   FLAGS = /DWIN32 /D_WINDOWS /W3 /GR /EHsc /MDd /Ob0 /Od /RTC1
   LINK_FLAGS = /machine:x64 /debug /INCREMENTAL /subsystem:console
-  LINK_LIBRARIES = src\lab_lib.lib  kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib
-  OBJECT_DIR = src\CMakeFiles\Lab2_Operating_systems.dir
+  LINK_LIBRARIES = src\array_processor.lib  kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib
+  OBJECT_DIR = src\CMakeFiles\Lab1_Operating_systems.dir
   POST_BUILD = cd .
   PRE_LINK = cd .
-  TARGET_COMPILE_PDB = src\CMakeFiles\Lab2_Operating_systems.dir\
-  TARGET_FILE = src\Lab2_Operating_systems.exe
-  TARGET_IMPLIB = src\Lab2_Operating_systems.lib
-  TARGET_PDB = src\Lab2_Operating_systems.pdb
+  TARGET_COMPILE_PDB = src\CMakeFiles\Lab1_Operating_systems.dir\
+  TARGET_FILE = src\Lab1_Operating_systems.exe
+  TARGET_IMPLIB = src\Lab1_Operating_systems.lib
+  TARGET_PDB = src\Lab1_Operating_systems.pdb
 
 
 #############################################
@@ -641,11 +633,10 @@ build src\install\local: phony src\CMakeFiles\install\local.util
 #############################################
 # Order-only phony target for UnitTests
 
-build cmake_object_order_depends_target_UnitTests: phony || cmake_object_order_depends_target_gtest cmake_object_order_depends_target_gtest_main cmake_object_order_depends_target_lab_lib
+build cmake_object_order_depends_target_UnitTests: phony || cmake_object_order_depends_target_array_processor cmake_object_order_depends_target_gtest cmake_object_order_depends_target_gtest_main
 
-build tests\CMakeFiles\UnitTests.dir\test_main.cpp.obj: CXX_COMPILER__UnitTests_unscanned_Debug C$:\Users\Dashuka\source\repos\Lab2_Operating_systems\tests\test_main.cpp || cmake_object_order_depends_target_UnitTests
-  DEFINES = -DUNIT_TESTING
-  FLAGS = /DWIN32 /D_WINDOWS /W3 /GR /EHsc /MDd /Ob0 /Od /RTC1
+build tests\CMakeFiles\UnitTests.dir\test_array_processor.cpp.obj: CXX_COMPILER__UnitTests_unscanned_Debug C$:\Users\Dashuka\source\repos\Lab2_Operating_systems\tests\test_array_processor.cpp || cmake_object_order_depends_target_UnitTests
+  FLAGS = /DWIN32 /D_WINDOWS /W3 /GR /EHsc /MDd /Ob0 /Od /RTC1 -std:c++17
   INCLUDES = -IC:\Users\Dashuka\source\repos\Lab2_Operating_systems\include -external:IC:\Users\Dashuka\source\repos\Lab2_Operating_systems\out\build\x64-debug\_deps\googletest-src\googletest\include -external:IC:\Users\Dashuka\source\repos\Lab2_Operating_systems\out\build\x64-debug\_deps\googletest-src\googletest -external:W0
   OBJECT_DIR = tests\CMakeFiles\UnitTests.dir
   OBJECT_FILE_DIR = tests\CMakeFiles\UnitTests.dir
@@ -660,10 +651,10 @@ build tests\CMakeFiles\UnitTests.dir\test_main.cpp.obj: CXX_COMPILER__UnitTests_
 #############################################
 # Link the executable tests\UnitTests.exe
 
-build tests\UnitTests.exe: CXX_EXECUTABLE_LINKER__UnitTests_Debug tests\CMakeFiles\UnitTests.dir\test_main.cpp.obj | src\lab_lib.lib lib\gtest_main.lib lib\gtest.lib || lib\gtest.lib lib\gtest_main.lib src\lab_lib.lib
+build tests\UnitTests.exe: CXX_EXECUTABLE_LINKER__UnitTests_Debug tests\CMakeFiles\UnitTests.dir\test_array_processor.cpp.obj | src\array_processor.lib lib\gtest_main.lib lib\gtest.lib || lib\gtest.lib lib\gtest_main.lib src\array_processor.lib
   FLAGS = /DWIN32 /D_WINDOWS /W3 /GR /EHsc /MDd /Ob0 /Od /RTC1
   LINK_FLAGS = /machine:x64 /debug /INCREMENTAL /subsystem:console
-  LINK_LIBRARIES = src\lab_lib.lib  lib\gtest_main.lib  lib\gtest.lib  kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib
+  LINK_LIBRARIES = src\array_processor.lib  lib\gtest_main.lib  lib\gtest.lib  kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib
   OBJECT_DIR = tests\CMakeFiles\UnitTests.dir
   POST_BUILD = cd .
   PRE_LINK = cd .
@@ -740,13 +731,17 @@ build tests\install\local: phony tests\CMakeFiles\install\local.util
 # =============================================================================
 # Target aliases.
 
-build Lab2_Operating_systems: phony src\Lab2_Operating_systems.exe
+build Lab1_Operating_systems: phony src\Lab1_Operating_systems.exe
 
-build Lab2_Operating_systems.exe: phony src\Lab2_Operating_systems.exe
+build Lab1_Operating_systems.exe: phony src\Lab1_Operating_systems.exe
 
 build UnitTests: phony tests\UnitTests.exe
 
 build UnitTests.exe: phony tests\UnitTests.exe
+
+build array_processor: phony src\array_processor.lib
+
+build array_processor.lib: phony src\array_processor.lib
 
 build gmock: phony lib\gmock.lib
 
@@ -763,10 +758,6 @@ build gtest.lib: phony lib\gtest.lib
 build gtest_main: phony lib\gtest_main.lib
 
 build gtest_main.lib: phony lib\gtest_main.lib
-
-build lab_lib: phony src\lab_lib.lib
-
-build lab_lib.lib: phony src\lab_lib.lib
 
 # =============================================================================
 # Folder targets.
@@ -804,7 +795,7 @@ build _deps\googletest-build\googletest\all: phony lib\gtest.lib lib\gtest_main.
 #############################################
 # Folder: C:/Users/Dashuka/source/repos/Lab2_Operating_systems/out/build/x64-debug/src
 
-build src\all: phony src\lab_lib.lib src\Lab2_Operating_systems.exe
+build src\all: phony src\array_processor.lib src\Lab1_Operating_systems.exe
 
 # =============================================================================
 

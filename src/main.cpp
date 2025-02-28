@@ -1,69 +1,40 @@
-﻿#include <iostream>
-#include <windows.h>
-#include <limits>
-#include "thread_data.h"
+﻿#include "array_processor.h"
+#include <iostream>
+#include <vector>
 
 int main() {
-    int n = 0;
+    std::vector<int> arr;
+    int size;
+
     std::cout << "Enter array size: ";
-    while (!(std::cin >> n) || n <= 0) {
-        std::cin.clear();
-        std::cin.ignore(std::numeric_limits<std::streamsize>::max(), '\n');
-        std::cout << "Invalid input. Please enter a positive integer: ";
+    std::cin >> size;
+
+    arr.resize(size);
+    for (auto& item : arr) {
+        std::cout << "Enter number: ";
+        std::cin >> item;
     }
 
-    int* arr = new(std::nothrow) int[n];
-    if (!arr) {
-        std::cerr << "Memory allocation failed." << std::endl;
-        return 1;
-    }
+    int min, max;
+    double average;
 
-    for (int i = 0; i < n; ++i) {
-        std::cout << "Enter element " << i << ": ";
-        while (!(std::cin >> arr[i])) {
-            std::cin.clear();
-            std::cin.ignore(std::numeric_limits<std::streamsize>::max(), '\n');
-            std::cout << "Invalid input. Please enter an integer: ";
-        }
-    }
+    std::thread minmax_thread([&] {
+        ArrayProcessor::FindMinMax(arr, min, max);
+        std::cout << "Min: " << min << "\nMax: " << max << std::endl;
+        });
 
-    MinMaxData mmData = { arr, n, 0, 0 };
-    AverageData avgData = { arr, n, 0.0 };
+    std::thread average_thread([&] {
+        average = ArrayProcessor::CalculateAverage(arr);
+        std::cout << "Average: " << average << std::endl;
+        });
 
-    HANDLE hMinMax = CreateThread(NULL, 0, MinMaxThreadProc, &mmData, 0, NULL);
-    if (!hMinMax) {
-        std::cerr << "Failed to create MinMax thread. Error: " << GetLastError() << std::endl;
-        delete[] arr;
-        return 1;
-    }
+    minmax_thread.join();
+    average_thread.join();
 
-    HANDLE hAverage = CreateThread(NULL, 0, AverageThreadProc, &avgData, 0, NULL);
-    if (!hAverage) {
-        std::cerr << "Failed to create Average thread. Error: " << GetLastError() << std::endl;
-        CloseHandle(hMinMax);
-        delete[] arr;
-        return 1;
-    }
+    ArrayProcessor::ReplaceMinMax(arr, average);
 
-    WaitForSingleObject(hMinMax, INFINITE);
-    WaitForSingleObject(hAverage, INFINITE);
+    std::cout << "Result array: ";
+    for (auto num : arr) std::cout << num << " ";
 
-    CloseHandle(hMinMax);
-    CloseHandle(hAverage);
-
-    const int avgInt = static_cast<int>(avgData.average);
-    for (int i = 0; i < n; ++i) {
-        if (arr[i] == mmData.min || arr[i] == mmData.max) {
-            arr[i] = avgInt;
-        }
-    }
-
-    std::cout << "Modified array:";
-    for (int i = 0; i < n; ++i) {
-        std::cout << " " << arr[i];
-    }
-    std::cout << std::endl;
-
-    delete[] arr;
     return 0;
 }

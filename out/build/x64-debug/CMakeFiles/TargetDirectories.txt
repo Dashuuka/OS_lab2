@@ -26,8 +26,8 @@ C:/Users/Dashuka/source/repos/Lab2_Operating_systems/out/build/x64-debug/_deps/g
 C:/Users/Dashuka/source/repos/Lab2_Operating_systems/out/build/x64-debug/_deps/googletest-build/googletest/CMakeFiles/list_install_components.dir
 C:/Users/Dashuka/source/repos/Lab2_Operating_systems/out/build/x64-debug/_deps/googletest-build/googletest/CMakeFiles/install.dir
 C:/Users/Dashuka/source/repos/Lab2_Operating_systems/out/build/x64-debug/_deps/googletest-build/googletest/CMakeFiles/install/local.dir
-C:/Users/Dashuka/source/repos/Lab2_Operating_systems/out/build/x64-debug/src/CMakeFiles/lab_lib.dir
-C:/Users/Dashuka/source/repos/Lab2_Operating_systems/out/build/x64-debug/src/CMakeFiles/Lab2_Operating_systems.dir
+C:/Users/Dashuka/source/repos/Lab2_Operating_systems/out/build/x64-debug/src/CMakeFiles/array_processor.dir
+C:/Users/Dashuka/source/repos/Lab2_Operating_systems/out/build/x64-debug/src/CMakeFiles/Lab1_Operating_systems.dir
 C:/Users/Dashuka/source/repos/Lab2_Operating_systems/out/build/x64-debug/src/CMakeFiles/test.dir
 C:/Users/Dashuka/source/repos/Lab2_Operating_systems/out/build/x64-debug/src/CMakeFiles/edit_cache.dir
 C:/Users/Dashuka/source/repos/Lab2_Operating_systems/out/build/x64-debug/src/CMakeFiles/rebuild_cache.dir
