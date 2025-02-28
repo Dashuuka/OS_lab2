@@ -520,41 +520,41 @@ build src\array_processor.lib: CXX_STATIC_LIBRARY_LINKER__array_processor_Debug 
   TARGET_PDB = src\array_processor.pdb
 
 # =============================================================================
-# Object build statements for EXECUTABLE target Lab1_Operating_systems
+# Object build statements for EXECUTABLE target ProcessCreationLab
 
 
 #############################################
-# Order-only phony target for Lab1_Operating_systems
+# Order-only phony target for ProcessCreationLab
 
-build cmake_object_order_depends_target_Lab1_Operating_systems: phony || cmake_object_order_depends_target_array_processor
+build cmake_object_order_depends_target_ProcessCreationLab: phony || cmake_object_order_depends_target_array_processor
 
-build src\CMakeFiles\Lab1_Operating_systems.dir\main.cpp.obj: CXX_COMPILER__Lab1_Operating_systems_unscanned_Debug C$:\Users\Dashuka\source\repos\Lab2_Operating_systems\src\main.cpp || cmake_object_order_depends_target_Lab1_Operating_systems
+build src\CMakeFiles\ProcessCreationLab.dir\main.cpp.obj: CXX_COMPILER__ProcessCreationLab_unscanned_Debug C$:\Users\Dashuka\source\repos\Lab2_Operating_systems\src\main.cpp || cmake_object_order_depends_target_ProcessCreationLab
   FLAGS = /DWIN32 /D_WINDOWS /W3 /GR /EHsc /MDd /Ob0 /Od /RTC1 -std:c++17
   INCLUDES = -IC:\Users\Dashuka\source\repos\Lab2_Operating_systems\include
-  OBJECT_DIR = src\CMakeFiles\Lab1_Operating_systems.dir
-  OBJECT_FILE_DIR = src\CMakeFiles\Lab1_Operating_systems.dir
-  TARGET_COMPILE_PDB = src\CMakeFiles\Lab1_Operating_systems.dir\
-  TARGET_PDB = src\Lab1_Operating_systems.pdb
+  OBJECT_DIR = src\CMakeFiles\ProcessCreationLab.dir
+  OBJECT_FILE_DIR = src\CMakeFiles\ProcessCreationLab.dir
+  TARGET_COMPILE_PDB = src\CMakeFiles\ProcessCreationLab.dir\
+  TARGET_PDB = src\ProcessCreationLab.pdb
 
 
 # =============================================================================
-# Link build statements for EXECUTABLE target Lab1_Operating_systems
+# Link build statements for EXECUTABLE target ProcessCreationLab
 
 
 #############################################
-# Link the executable src\Lab1_Operating_systems.exe
+# Link the executable src\ProcessCreationLab.exe
 
-build src\Lab1_Operating_systems.exe: CXX_EXECUTABLE_LINKER__Lab1_Operating_systems_Debug src\CMakeFiles\Lab1_Operating_systems.dir\main.cpp.obj | src\array_processor.lib || src\array_processor.lib
+build src\ProcessCreationLab.exe: CXX_EXECUTABLE_LINKER__ProcessCreationLab_Debug src\CMakeFiles\ProcessCreationLab.dir\main.cpp.obj | src\array_processor.lib || src\array_processor.lib
   FLAGS = /DWIN32 /D_WINDOWS /W3 /GR /EHsc /MDd /Ob0 /Od /RTC1
   LINK_FLAGS = /machine:x64 /debug /INCREMENTAL /subsystem:console
   LINK_LIBRARIES = src\array_processor.lib  kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib
-  OBJECT_DIR = src\CMakeFiles\Lab1_Operating_systems.dir
+  OBJECT_DIR = src\CMakeFiles\ProcessCreationLab.dir
   POST_BUILD = cd .
   PRE_LINK = cd .
-  TARGET_COMPILE_PDB = src\CMakeFiles\Lab1_Operating_systems.dir\
-  TARGET_FILE = src\Lab1_Operating_systems.exe
-  TARGET_IMPLIB = src\Lab1_Operating_systems.lib
-  TARGET_PDB = src\Lab1_Operating_systems.pdb
+  TARGET_COMPILE_PDB = src\CMakeFiles\ProcessCreationLab.dir\
+  TARGET_FILE = src\ProcessCreationLab.exe
+  TARGET_IMPLIB = src\ProcessCreationLab.lib
+  TARGET_PDB = src\ProcessCreationLab.pdb
 
 
 #############################################
@@ -731,9 +731,9 @@ build tests\install\local: phony tests\CMakeFiles\install\local.util
 # =============================================================================
 # Target aliases.
 
-build Lab1_Operating_systems: phony src\Lab1_Operating_systems.exe
+build ProcessCreationLab: phony src\ProcessCreationLab.exe
 
-build Lab1_Operating_systems.exe: phony src\Lab1_Operating_systems.exe
+build ProcessCreationLab.exe: phony src\ProcessCreationLab.exe
 
 build UnitTests: phony tests\UnitTests.exe
 
@@ -795,7 +795,7 @@ build _deps\googletest-build\googletest\all: phony lib\gtest.lib lib\gtest_main.
 #############################################
 # Folder: C:/Users/Dashuka/source/repos/Lab2_Operating_systems/out/build/x64-debug/src
 
-build src\all: phony src\array_processor.lib src\Lab1_Operating_systems.exe
+build src\all: phony src\array_processor.lib src\ProcessCreationLab.exe
 
 # =============================================================================
 

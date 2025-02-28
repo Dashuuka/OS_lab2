@@ -16,5 +16,19 @@
     <TestDuration Test="ArrayProcessorTest.MixedPositiveNegative" Duration="94" />
     <TestDuration Test="ArrayProcessorTest.LargeNumbersHandling" Duration="62" />
     <TestDuration Test="ArrayProcessorTest.EmptyArrayReplaceNoOp" Duration="1" />
+    <TestDuration Test="ArrayProcessorTest.HandlesEmptyArray" Duration="1" />
+    <TestDuration Test="ArrayProcessorTest.HandlesSingleElement" Duration="14" />
+    <TestDuration Test="ArrayProcessorTest.HandlesNegativeNumbers" Duration="46" />
+    <TestDuration Test="ArrayProcessorTest.HandlesLargeArray" Duration="15558" />
+    <TestDuration Test="ArrayProcessorTest.HandlesMixedNumbers" Duration="78" />
+    <TestDuration Test="ArrayProcessorTest.HandlesDuplicateElements" Duration="62" />
+    <TestDuration Test="ArrayProcessorTest.HandlesAllElementsSame" Duration="62" />
+    <TestDuration Test="ArrayProcessorTest.HandlesInvalidInput" Duration="45" />
+    <TestDuration Test="ArrayProcessorTest.HandlesThreadExceptions" Duration="92" />
+    <TestDuration Test="ArrayProcessorTest.HandlesMixedPositiveNegative" Duration="62" />
+    <TestDuration Test="ArrayProcessorTest.HandlesZeroElements" Duration="46" />
+    <TestDuration Test="ArrayProcessorTest.HandlesSingleNegativeElement" Duration="15" />
+    <TestDuration Test="ArrayProcessorTest.HandlesAllNegativeElements" Duration="60" />
+    <TestDuration Test="ArrayProcessorTest.HandlesNonIntegerAverage" Duration="46" />
   </TestDurations>
 </GtaTestDurations>

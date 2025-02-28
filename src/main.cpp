@@ -1,40 +1,38 @@
 ﻿#include "array_processor.h"
 #include <iostream>
 #include <vector>
+#include <stdexcept>
 
 int main() {
-    std::vector<int> arr;
-    int size;
+    try {
+        std::vector<int> arr;
+        int size;
 
-    std::cout << "Enter array size: ";
-    std::cin >> size;
+        std::cout << "Enter array size: ";
+        if (!(std::cin >> size) || size <= 0) {
+            throw ArrayProcessor::InvalidInputException("Invalid array size");
+        }
 
-    arr.resize(size);
-    for (auto& item : arr) {
-        std::cout << "Enter number: ";
-        std::cin >> item;
+        arr.resize(size);
+        for (int i = 0; i < size; ++i) {
+            std::cout << "Enter element " << i + 1 << ": ";
+            if (!(std::cin >> arr[i])) {
+                throw ArrayProcessor::InvalidInputException("Invalid input for array element");
+            }
+        }
+
+        ArrayProcessor::ProcessArray(arr);
+
+        std::cout << "Result array: ";
+        for (const auto& num : arr) {
+            std::cout << num << " ";
+        }
+        std::cout << std::endl;
+    }
+    catch (const std::exception& e) {
+        std::cerr << "Error: " << e.what() << std::endl;
+        return EXIT_FAILURE;
     }
 
-    int min, max;
-    double average;
-
-    std::thread minmax_thread([&] {
-        ArrayProcessor::FindMinMax(arr, min, max);
-        std::cout << "Min: " << min << "\nMax: " << max << std::endl;
-        });
-
-    std::thread average_thread([&] {
-        average = ArrayProcessor::CalculateAverage(arr);
-        std::cout << "Average: " << average << std::endl;
-        });
-
-    minmax_thread.join();
-    average_thread.join();
-
-    ArrayProcessor::ReplaceMinMax(arr, average);
-
-    std::cout << "Result array: ";
-    for (auto num : arr) std::cout << num << " ";
-
-    return 0;
+    return EXIT_SUCCESS;
 }

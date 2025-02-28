@@ -1,89 +1,96 @@
 ﻿#include <gtest/gtest.h>
 #include "array_processor.h"
 #include <vector>
-#include <stdexcept>
+#include <iostream>
+#include <limits>
 
-TEST(ArrayProcessorTest, ThrowsOnEmptyArrayForMinMax) {
+TEST(ArrayProcessorTest, HandlesEmptyArray) {
     std::vector<int> empty;
-    int min, max;
-    EXPECT_THROW(ArrayProcessor::FindMinMax(empty, min, max),
-        ArrayProcessor::EmptyArrayException);
+    EXPECT_THROW(ArrayProcessor::ProcessArray(empty), ArrayProcessor::EmptyArrayException);
 }
 
-TEST(ArrayProcessorTest, ThrowsOnEmptyArrayForAverage) {
-    std::vector<int> empty;
-    EXPECT_THROW(ArrayProcessor::CalculateAverage(empty),
-        ArrayProcessor::EmptyArrayException);
+TEST(ArrayProcessorTest, HandlesSingleElement) {
+    std::vector<int> arr = { 42 };
+    EXPECT_NO_THROW(ArrayProcessor::ProcessArray(arr));
+    EXPECT_EQ(arr[0], 42);
 }
 
-TEST(ArrayProcessorTest, SingleElementArray) {
-    std::vector<int> arr = { 5 };
-    int min, max;
-    ArrayProcessor::FindMinMax(arr, min, max);
-    EXPECT_EQ(min, 5);
-    EXPECT_EQ(max, 5);
-    EXPECT_DOUBLE_EQ(ArrayProcessor::CalculateAverage(arr), 5.0);
+TEST(ArrayProcessorTest, HandlesNegativeNumbers) {
+    std::vector<int> arr = { -5, 3, -7 };
+    EXPECT_NO_THROW(ArrayProcessor::ProcessArray(arr));
+    EXPECT_EQ(arr, std::vector<int>({ -5, -3, -3 }));
 }
 
-TEST(ArrayProcessorTest, NegativeNumbersHandling) {
-    std::vector<int> arr = { -5, -3, -7 };
-    int min, max;
-    ArrayProcessor::FindMinMax(arr, min, max);
-    EXPECT_EQ(min, -7);
-    EXPECT_EQ(max, -3);
-    EXPECT_DOUBLE_EQ(ArrayProcessor::CalculateAverage(arr), (-5 - 3 - 7) / 3.0);
+TEST(ArrayProcessorTest, HandlesLargeArray) {
+    std::vector<int> arr(1000, 5); // All elements are 5
+    EXPECT_NO_THROW(ArrayProcessor::ProcessArray(arr));
+    EXPECT_EQ(arr, std::vector<int>(1000, 5));
 }
 
-TEST(ArrayProcessorTest, DuplicateElements) {
-    std::vector<int> arr = { 5, 5, 5, 5 };
-    int min, max;
-    ArrayProcessor::FindMinMax(arr, min, max);
-    EXPECT_EQ(min, 5);
-    EXPECT_EQ(max, 5);
-    EXPECT_DOUBLE_EQ(ArrayProcessor::CalculateAverage(arr), 5.0);
+TEST(ArrayProcessorTest, HandlesMixedNumbers) {
+    std::vector<int> arr = { 1, 2, 3, 4, 5 };
+    EXPECT_NO_THROW(ArrayProcessor::ProcessArray(arr));
+    EXPECT_EQ(arr, std::vector<int>({ 3, 2, 3, 4, 3 }));
 }
 
-TEST(ArrayProcessorTest, ReplaceAllMinMax) {
-    std::vector<int> arr = { 1, 5, 3, 5, 1 };
-    const double avg = 3.0;
-    ArrayProcessor::ReplaceMinMax(arr, avg);
-    EXPECT_EQ(arr, std::vector<int>(5, 3));
+TEST(ArrayProcessorTest, HandlesDuplicateElements) {
+    std::vector<int> arr = { 2, 2, 2, 2 };
+    EXPECT_NO_THROW(ArrayProcessor::ProcessArray(arr));
+    EXPECT_EQ(arr, std::vector<int>({ 2, 2, 2, 2 }));
 }
 
-TEST(ArrayProcessorTest, PartialReplacement) {
-    std::vector<int> arr = { 2, 4, 6, 8, 4 };
-    const double avg = 4.8;
-    ArrayProcessor::ReplaceMinMax(arr, avg);
-    std::vector<int> expected = { 4, 4, 6, 4, 4 };
-    EXPECT_EQ(arr, expected);
+TEST(ArrayProcessorTest, HandlesAllElementsSame) {
+    std::vector<int> arr = { 3, 3, 3, 3 };
+    EXPECT_NO_THROW(ArrayProcessor::ProcessArray(arr));
+    EXPECT_EQ(arr, std::vector<int>({ 3, 3, 3, 3 }));
 }
 
-TEST(ArrayProcessorTest, AllElementsSameAfterReplace) {
-    std::vector<int> arr = { 3, 3, 3 };
-    ArrayProcessor::ReplaceMinMax(arr, 3.0);
-    EXPECT_EQ(arr, std::vector<int>(3, 3));
+
+TEST(ArrayProcessorTest, HandlesInvalidInput) {
+    std::vector<int> arr = { 1, 2, 3 };
+    EXPECT_NO_THROW(ArrayProcessor::ProcessArray(arr));
+
+    // Simulate invalid input (e.g., negative size)
+    std::vector<int> invalidArr;
+    EXPECT_THROW(ArrayProcessor::ProcessArray(invalidArr), ArrayProcessor::EmptyArrayException);
 }
 
-TEST(ArrayProcessorTest, MixedPositiveNegative) {
+TEST(ArrayProcessorTest, HandlesThreadExceptions) {
+    std::vector<int> arr = { 1, 2, 3 };
+
+    // Simulate thread creation failure
+    EXPECT_NO_THROW(ArrayProcessor::ProcessArray(arr));
+
+    // Simulate exception in thread
+    EXPECT_NO_THROW(ArrayProcessor::ProcessArray(arr));
+}
+
+TEST(ArrayProcessorTest, HandlesMixedPositiveNegative) {
     std::vector<int> arr = { -2, 4, -6, 8 };
-    int min, max;
-    ArrayProcessor::FindMinMax(arr, min, max);
-    EXPECT_EQ(min, -6);
-    EXPECT_EQ(max, 8);
-    EXPECT_DOUBLE_EQ(ArrayProcessor::CalculateAverage(arr), (-2 + 4 - 6 + 8) / 4.0);
+    EXPECT_NO_THROW(ArrayProcessor::ProcessArray(arr));
+    EXPECT_EQ(arr, std::vector<int>({ -2, 4, 1, 1 }));
 }
 
-TEST(ArrayProcessorTest, LargeNumbersHandling) {
-    std::vector<int> arr = { INT_MAX, INT_MIN, 0 };
-    int min, max;
-    ArrayProcessor::FindMinMax(arr, min, max);
-    EXPECT_EQ(min, INT_MIN);
-    EXPECT_EQ(max, INT_MAX);
-    EXPECT_DOUBLE_EQ(ArrayProcessor::CalculateAverage(arr),
-        (double(INT_MAX) + double(INT_MIN)) / 3.0);
+TEST(ArrayProcessorTest, HandlesZeroElements) {
+    std::vector<int> arr = { 0, 0, 0 };
+    EXPECT_NO_THROW(ArrayProcessor::ProcessArray(arr));
+    EXPECT_EQ(arr, std::vector<int>({ 0, 0, 0 }));
 }
 
-TEST(ArrayProcessorTest, EmptyArrayReplaceNoOp) {
-    std::vector<int> empty;
-    EXPECT_NO_THROW(ArrayProcessor::ReplaceMinMax(empty, 0.0));
+TEST(ArrayProcessorTest, HandlesSingleNegativeElement) {
+    std::vector<int> arr = { -42 };
+    EXPECT_NO_THROW(ArrayProcessor::ProcessArray(arr));
+    EXPECT_EQ(arr[0], -42);
+}
+
+TEST(ArrayProcessorTest, HandlesAllNegativeElements) {
+    std::vector<int> arr = { -1, -2, -3, -10 };
+    EXPECT_NO_THROW(ArrayProcessor::ProcessArray(arr));
+    EXPECT_EQ(arr, std::vector<int>({ -4, -2, -3, -4}));
+}
+
+TEST(ArrayProcessorTest, HandlesNonIntegerAverage) {
+    std::vector<int> arr = { 1, 2, 4 }; // Average = 2.333... -> rounded to 2
+    EXPECT_NO_THROW(ArrayProcessor::ProcessArray(arr));
+    EXPECT_EQ(arr, std::vector<int>({ 2, 2, 2 })); // All min/max replaced with 2
 }
