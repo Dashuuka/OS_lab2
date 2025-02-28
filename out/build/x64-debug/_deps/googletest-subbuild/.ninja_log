@@ -1,0 +1,21 @@
+# ninja log v5
+1745	1798	7624497134782341	googletest-populate-prefix/src/googletest-populate-stamp/googletest-populate-build	5c1b2e7921489b80
+2	69	7624497117484018	googletest-populate-prefix/src/googletest-populate-stamp/googletest-populate-mkdir	90ab0c2499336492
+1558	1637	7624497133166702	googletest-populate-prefix/src/googletest-populate-stamp/googletest-populate-update	82706299b9aff5d5
+2	69	7624497117484018	C:/Users/Dashuka/source/repos/Lab2_Operating_systems/out/build/x64-debug/_deps/googletest-subbuild/googletest-populate-prefix/src/googletest-populate-stamp/googletest-populate-mkdir	90ab0c2499336492
+70	1557	7624497132317404	googletest-populate-prefix/src/googletest-populate-stamp/googletest-populate-download	23367bdfa83678fc
+1637	1693	7624497133729122	C:/Users/Dashuka/source/repos/Lab2_Operating_systems/out/build/x64-debug/_deps/googletest-subbuild/googletest-populate-prefix/src/googletest-populate-stamp/googletest-populate-patch	812f9dae0dc1610f
+1923	2048	7624497137253600	C:/Users/Dashuka/source/repos/Lab2_Operating_systems/out/build/x64-debug/_deps/googletest-subbuild/googletest-populate-prefix/src/googletest-populate-stamp/googletest-populate-done	a5bea967f254fe42
+70	1557	7624497132317404	C:/Users/Dashuka/source/repos/Lab2_Operating_systems/out/build/x64-debug/_deps/googletest-subbuild/googletest-populate-prefix/src/googletest-populate-stamp/googletest-populate-download	23367bdfa83678fc
+1558	1637	7624497133166702	C:/Users/Dashuka/source/repos/Lab2_Operating_systems/out/build/x64-debug/_deps/googletest-subbuild/googletest-populate-prefix/src/googletest-populate-stamp/googletest-populate-update	82706299b9aff5d5
+1637	1693	7624497133729122	googletest-populate-prefix/src/googletest-populate-stamp/googletest-populate-patch	812f9dae0dc1610f
+1693	1745	7624497134260051	googletest-populate-prefix/src/googletest-populate-stamp/googletest-populate-configure	bd087c10ff8d2515
+1923	2048	7624497137253600	CMakeFiles/googletest-populate-complete	a5bea967f254fe42
+1693	1745	7624497134260051	C:/Users/Dashuka/source/repos/Lab2_Operating_systems/out/build/x64-debug/_deps/googletest-subbuild/googletest-populate-prefix/src/googletest-populate-stamp/googletest-populate-configure	bd087c10ff8d2515
+1745	1798	7624497134782341	C:/Users/Dashuka/source/repos/Lab2_Operating_systems/out/build/x64-debug/_deps/googletest-subbuild/googletest-populate-prefix/src/googletest-populate-stamp/googletest-populate-build	5c1b2e7921489b80
+1798	1850	7624497135295059	googletest-populate-prefix/src/googletest-populate-stamp/googletest-populate-install	14e59370c12dba09
+1798	1850	7624497135295059	C:/Users/Dashuka/source/repos/Lab2_Operating_systems/out/build/x64-debug/_deps/googletest-subbuild/googletest-populate-prefix/src/googletest-populate-stamp/googletest-populate-install	14e59370c12dba09
+1850	1923	7624497136023462	googletest-populate-prefix/src/googletest-populate-stamp/googletest-populate-test	5af35c6f4b8da0eb
+1850	1923	7624497136023462	C:/Users/Dashuka/source/repos/Lab2_Operating_systems/out/build/x64-debug/_deps/googletest-subbuild/googletest-populate-prefix/src/googletest-populate-stamp/googletest-populate-test	5af35c6f4b8da0eb
+1923	2048	7624497137253600	googletest-populate-prefix/src/googletest-populate-stamp/googletest-populate-done	a5bea967f254fe42
+1923	2048	7624497137253600	C:/Users/Dashuka/source/repos/Lab2_Operating_systems/out/build/x64-debug/_deps/googletest-subbuild/CMakeFiles/googletest-populate-complete	a5bea967f254fe42

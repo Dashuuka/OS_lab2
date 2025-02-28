@@ -1,0 +1,20 @@
+# ninja log v5
+4	21	0	clean	8c45b54705a541e8
+34	1008	7624500939594042	_deps/googletest-build/googletest/CMakeFiles/gtest_main.dir/src/gtest_main.cc.obj	fe9329da7419a618
+17	2080	7624500950264677	_deps/googletest-build/googlemock/CMakeFiles/gmock_main.dir/__/googletest/src/gtest-all.cc.obj	40584e4968711888
+25	1113	7624500940654429	_deps/googletest-build/googlemock/CMakeFiles/gmock_main.dir/src/gmock_main.cc.obj	586d8c7a4cc5327f
+21	1538	7624500944883855	_deps/googletest-build/googlemock/CMakeFiles/gmock_main.dir/src/gmock-all.cc.obj	9c9c134a12248725
+12	1540	7624500944904809	_deps/googletest-build/googlemock/CMakeFiles/gmock.dir/src/gmock-all.cc.obj	2c6a260f07a6ed7e
+29	2156	7624500951042693	_deps/googletest-build/googletest/CMakeFiles/gtest.dir/src/gtest-all.cc.obj	eeb378f87f3c7571
+6	2134	7624500950842276	_deps/googletest-build/googlemock/CMakeFiles/gmock.dir/__/googletest/src/gtest-all.cc.obj	401dd6039cbc2d24
+3	16	0	clean	8c45b54705a541e8
+32	1012	7624504153730959	src/CMakeFiles/lab_lib.dir/min_max_thread.cpp.obj	7094921f7d52bdf4
+35	1140	7624504155035767	src/CMakeFiles/lab_lib.dir/average_thread.cpp.obj	53fddbd1410f9538
+20	1260	7624504156233417	_deps/googletest-build/googlemock/CMakeFiles/gmock_main.dir/src/gmock_main.cc.obj	586d8c7a4cc5327f
+28	1432	7624504157961796	_deps/googletest-build/googletest/CMakeFiles/gtest_main.dir/src/gtest_main.cc.obj	fe9329da7419a618
+42	1567	7624504159303131	tests/CMakeFiles/UnitTests.dir/test_main.cpp.obj	eb008dcfabd35c64
+17	1731	7624504160930187	_deps/googletest-build/googlemock/CMakeFiles/gmock_main.dir/src/gmock-all.cc.obj	9c9c134a12248725
+10	1764	7624504161273960	_deps/googletest-build/googlemock/CMakeFiles/gmock.dir/src/gmock-all.cc.obj	2c6a260f07a6ed7e
+5	2207	7624504165645411	_deps/googletest-build/googlemock/CMakeFiles/gmock.dir/__/googletest/src/gtest-all.cc.obj	401dd6039cbc2d24
+24	2252	7624504166108379	_deps/googletest-build/googletest/CMakeFiles/gtest.dir/src/gtest-all.cc.obj	eeb378f87f3c7571
+13	2304	7624504166623523	_deps/googletest-build/googlemock/CMakeFiles/gmock_main.dir/__/googletest/src/gtest-all.cc.obj	40584e4968711888
