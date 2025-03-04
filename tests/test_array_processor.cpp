@@ -22,7 +22,7 @@ TEST(ArrayProcessorTest, HandlesNegativeNumbers) {
 }
 
 TEST(ArrayProcessorTest, HandlesLargeArray) {
-    std::vector<int> arr(1000, 5); // All elements are 5
+    std::vector<int> arr(1000, 5); 
     EXPECT_NO_THROW(ArrayProcessor::ProcessArray(arr));
     EXPECT_EQ(arr, std::vector<int>(1000, 5));
 }
@@ -90,7 +90,7 @@ TEST(ArrayProcessorTest, HandlesAllNegativeElements) {
 }
 
 TEST(ArrayProcessorTest, HandlesNonIntegerAverage) {
-    std::vector<int> arr = { 1, 2, 4 }; // Average = 2.333... -> rounded to 2
+    std::vector<int> arr = { 1, 2, 4 };
     EXPECT_NO_THROW(ArrayProcessor::ProcessArray(arr));
-    EXPECT_EQ(arr, std::vector<int>({ 2, 2, 2 })); // All min/max replaced with 2
+    EXPECT_EQ(arr, std::vector<int>({ 2, 2, 2 }));
 }
