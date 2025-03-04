@@ -2,13 +2,11 @@
 #include <algorithm>
 #include <numeric>
 #include <iostream>
-#include <cmath> // For std::round
-#include <iomanip> // For std::fixed and std::setprecision
+#include <cmath> 
+#include <iomanip> 
 
-// Initialize static mutex
 std::mutex ArrayProcessor::console_mutex;
 
-// Initialize static results
 ArrayProcessor::ThreadResults ArrayProcessor::results;
 
 void ArrayProcessor::ValidateArray(const std::vector<int>& arr) {
@@ -32,7 +30,6 @@ DWORD WINAPI ArrayProcessor::FindMinMaxThread(LPVOID lpParam) {
         std::cout << "Min: " << min << "\nMax: " << max << std::endl;
     }
 
-    // Save results
     results.min = min;
     results.max = max;
     return 0;
@@ -48,17 +45,15 @@ DWORD WINAPI ArrayProcessor::CalculateAverageThread(LPVOID lpParam) {
     }
 
     double average = sum / arr->size();
-    int roundedAverage = static_cast<int>(std::round(average)); // Round to nearest integer
+    int roundedAverage = static_cast<int>(std::round(average));
 
     {
         std::lock_guard<std::mutex> lock(console_mutex);
-        // Print average with 2 decimal places
         std::cout << "Average: " << std::fixed << std::setprecision(2) << average
             << " (rounded to " << roundedAverage << ")" << std::endl;
     }
 
-    // Save results
-    results.average = roundedAverage; // Save rounded average
+    results.average = roundedAverage;
     return 0;
 }
 
@@ -78,10 +73,9 @@ void ArrayProcessor::ProcessArray(std::vector<int>& arr) {
     CloseHandle(hMinMax);
     CloseHandle(hAverage);
 
-    // Replace ALL min and max elements with the rounded average
     for (int& num : arr) {
         if (num == results.min || num == results.max) {
-            num = results.average; // Use rounded average
+            num = results.average; 
         }
     }
 }
